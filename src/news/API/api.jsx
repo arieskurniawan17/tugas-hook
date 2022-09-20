@@ -12,7 +12,7 @@ const APINews = () => {
     const newLocal = async () => {
 
         try {
-            let resp = await axios.get(`https://newsapi.org/v2/everything?q=${idn}&apiKey=586adbf34c9049f7a63b075fc3b1f5a7`);
+            let resp = await axios.get(`https://newsapi.org/v2/everything=us&apiKey=586adbf34c9049f7a63b075fc3b1f5a7`);
             setUsed(resp.data.articles);
         } catch (e) {
             console.log(e.messange);
